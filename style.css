@@ -23,11 +23,9 @@ header {
 .logo img {
     width: 234px;
     height: 49px;
-    position: absolute;
-    top: 20px;
-    left: 84px;
+    position: relative;  
+    margin-left: 20px;   
 }
-
 
 nav {
     display: flex;
@@ -77,8 +75,8 @@ nav {
     padding: 60px 20px;
 }
 
-.sect-topic h2 {
-    margin-left: 20
+.topics h2 {
+    margin-left: 20px;
 }
  
 
@@ -196,7 +194,7 @@ nav {
     font-weight: 100;
 }
 .line {
-    
+
 }
 
 
@@ -338,8 +336,8 @@ nav {
     background-color:#14b8a6;
     border-radius: 400px;
     color: black;
-    width: 47px;  /* Increase the width */
-    height: 47px; /* Increase the height */
+    width: 47px;  
+    height: 47px; 
     object-fit: contain;
     opacity: 0.9;
     display: flex;
@@ -350,6 +348,299 @@ nav {
 }
 
 
+.trending-section {
+    text-align: left;
+    padding: 60px 20px;
+    margin-top: 40px; 
+}
+
+.trending-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.fashion-section {
+    margin-bottom: 40px;
+}
+
+
+.trending-container {
+    display: flex;
+    gap: 30px;
+}
+
+
+.trending-card {
+    width: 50%;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.trending-card:hover {
+    transform: scale(1.02);
+}
+
+
+.trending-image {
+    position: relative;
+}
+
+.trending-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.trend-category {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: black;
+    color: white;
+    padding: 5px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+.trend-details {
+    padding: 20px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.author-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.trend-details h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.trend-details p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    color: #14b8a6;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.fashion-section {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px; 
+}
+
+.trending-section {
+    display: block;
+    width: 100%;
+    clear: both; 
+}
+
+
+.horizontal-articles {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.articles-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.article-card {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+}
+
+.article-image {
+    position: relative;
+}
+
+.article-image img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.article-label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: black;
+    color: white;
+    padding: 5px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.article-content {
+    padding: 20px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.author-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.article-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.article-content p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.read-more {
+    display: inline-block;
+    color: #14b8a6;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: auto;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: white;
+    padding: 30px 0;
+    border-radius: 15px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.footer-left {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-logo {
+    height: 50px; 
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #222;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a img {
+    height: 24px;
+    width: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+.footer-line {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px auto;
+    width: 90%;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .articles-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-card {
+        width: 80%;
+    }
+}
 
 
 
